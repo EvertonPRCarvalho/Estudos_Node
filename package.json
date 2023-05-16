@@ -1,0 +1,19 @@
+{
+  "name": "doe_mais",
+  "version": "1.0.0",
+  "description": "Projeto Integrador do 4 periodo do curos de Analise e Desenvolvimento de Sistemas. ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "author": "Everton Carvalho",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^7.1.1",
+    "nodemon": "^2.0.22"
+  }
+}

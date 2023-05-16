@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>DOE+ | Login</title>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <button id="btn-mobile">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            <div id="menu">
+                <p>DOE+</p>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">ONGs</a></li>
+                    <li><a href="#">Parceiros</a></li>
+                    <li><a href="#">Nosso propósito</a></li>
+                </ul>
+                <a href="./index.ejs" id="btn-login">
+                    Cadastre-se
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>DOE+</h1>
+        <section id="login-container">
+            <div class="mensagem-login">
+                <h2>Entrar</h2>
+                <p>Somos motivados por cada ação transformadora que você faz aqui!</p>
+            </div>
+
+            <form action="/createUser" method="post" id="form-login">
+                <div id="email-container">
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" id="email">
+                </div>
+
+                <div id="senha-container">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha">
+                </div>
+
+                <button type="submit" id="submit-login">Entrar</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="../public/script.js"></script>
+</body>
+</html>
