@@ -6,6 +6,7 @@ const CreateAccount = require("../controller/CreateAccountController");
 const DoaItem = require("../controller/DoarItemController");
 const ItensDoados = require("../controller/ItensDoadosController");
 const Home = require("../controller/HomeController");
+const Teste = require("../controller/TesteController")
 
 
 routes.get("/", FirstPageController.getFirstPage);
@@ -15,9 +16,6 @@ routes.get("/create-account", CreateAccount.createAccount);
 routes.get("/doar-item", DoaItem.getDoarItem);
 routes.get("/itens-doados", ItensDoados.getAllItensDoados);
 routes.get("/home", Home.getAllItens);
-/*routes.post("/create", UserController.createUser);
-routes.delete("/delete", UserController.deleteUser);
-routes.put("/update", UserController.updateUser);
-*/
+routes.get("/teste", Teste.teste);
 
 module.exports = routes;

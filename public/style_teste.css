@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    right: 0;
+    background-color: white;
+    z-index: 10;
+}
+
+#menu a {
+    color: black;
+    font-weight: 500;
+}
+#menu p {
+    visibility: hidden;
+}
+
+.card-categoria {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    flex-direction: row;
+    list-style: none;
+    gap: 1rem;
+    
+}
+
+.card-categoria img {
+    margin-top: 2rem;
+    height: 10.5rem;
+    width: 10.5rem;
+}
+.card-categoria p {
+    text-align: center;
+    color: black;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+}
+#btn-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 1.87rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFC468;
+}
+
+#btn-login:hover, .doador-container:hover {
+    background-color: #c19650;
+}
+
+#nav {
+
+    margin: 1rem 0 0 1rem;
+}
+
+#nav.active #menu{
+    display: flex;
+    flex-direction: column;
+}
+
+#nav.active ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 1.5rem 0 0 2rem;
+}
+
+#nav.active #btn-login {
+    margin: 1.5rem 0 1.5rem 2rem;
+}
+
+#btn-mobile {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 50vh 150vh 5vh;
+    grid-template-areas:
+                    "cabecalho cabecalho"
+                    "filtro itens";
+
+                    margin-top: 4rem;
+}
+
+.cabecalho{
+    height: 24.375rem;
+    width: 120rem;
+    background-color: #c2c9c6;
+    grid-area: cabecalho;
+}
+#logo {
+    text-align: center;
+    margin: 4rem 0 2rem 0;
+    letter-spacing: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+#subtitulo{
+    text-align: center;
+    height: 2rem;
+    width: 50rem;
+    border-radius: 5px;
+    background-color: aliceblue;
+    color: black;
+    padding-top: 0.4rem;
+    margin: auto;
+}
+.filtro{
+    background-color: #c71818;
+    grid-area: filtro;
+    margin-top: 2rem;
+}
+.filtro h4{
+    margin-top: 2rem;
+}
+.itens{
+    /*
+    "iten21 iten22 iten23 iten24 iten25"
+    "iten31 iten32 iten33 iten34 iten35"
+    */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #2cc718;
+    grid-area: itens;
+    margin-top: 8rem;
+    
+}
+.item{
+    background-color: #9A9A9A;
+    height: 364px;
+    width: 240px;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+    margin-left: 2rem;
+}
+.item img{
+    width: 15rem;
+    height: 13.625rem;
+}
+.item p{
+    margin: 0.5rem 0;
+}
+.btn-tenho-interesse{
+    align-items: center;
+    width: 9.8rem;
+    height: 2.375rem;
+    margin-left: 2.5rem;
+    margin-top: 0.5rem;
+    
+    border: none;
+    border-radius: 5px;
+    background-color: #FFC468;
+    
+    
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+#paginacao > p{
+    
+    text-align: center;
+    font-size: 24px;
+    color: #355239;
+    font-weight: 700;
+    margin-bottom: 2rem;
+
+}
+.filtro{
+    margin-top: 8rem;
+}
+#filtro{
+    box-sizing: border-box;
+    max-width: 16rem;
+    height: 30rem;
+    padding-left: 1rem;
+    
+    margin-left: 5rem;
+    text-align: left;
+
+    border: 1px solid #9A9A9A;
+    border-radius: 5px;
+    color: black;
+}
+
+#filtro input{
+   margin-top: 1rem; 
+}
+#filtro label{
+   margin-top: 1rem; 
+}
+
+.footer-logo {
+    visibility: hidden;
+}
+
+.card-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 4rem;
+}
+
+.card-links img {
+    margin-top: 2rem;
+    width: 1.5rem;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1920px) {
+    #btn-mobile {
+        display: none;
+    }
+
+    main h1 {
+        margin-top: 4rem;
+    } 
+
+    #menu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: static;
+    }
+
+    #menu ul {
+        display: flex;
+        gap: 5.62rem;
+    }
+    
+    #menu p {
+        visibility: hidden;
+    }
+
+    #cards {
+        display: flex;
+        gap: 5.12rem;
+    }
+
+    .ong-container {
+        margin-top: 0;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border-top: 8px solid #D9D9D9;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .footer-logo {
+        visibility: visible;
+        letter-spacing: 1.92rem;
+    }
+
+    .card-links {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 4rem;
+        margin-bottom: 2rem;
+    }
+}

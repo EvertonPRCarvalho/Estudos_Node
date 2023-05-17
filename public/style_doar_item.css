@@ -92,11 +92,11 @@ main {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    margin-top: 2rem;
 }
 
 main h1 {
     letter-spacing: 3.55rem;
-    margin: 2rem 0 2.5rem 4rem;
 }
 .field-container {
     display: flex;
