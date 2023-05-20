@@ -37,6 +37,8 @@
     background-color: #FFC468;
     cursor: pointer;
     margin-top: 2rem;
+    margin-bottom: 2rem;
+    
 }
 
 .submit-account:hover {

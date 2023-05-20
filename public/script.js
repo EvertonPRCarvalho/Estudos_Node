@@ -13,30 +13,17 @@ var element4 = document.getElementById("btn-next-step");
 function nextStepCreateAccount(){
     if (element1.style.display != "none"){
         element1.style.display = "none";    
-        element2.style.display = "block";   
-        console.log(element1.style.display);
-        console.log(element2.style.display);
-        console.log(element3.style.display);
-        console.log("estou dentro do IF");
+        element2.style.display = "block";
     } else if (element1.style.display == "none" && element2.style.display == "none" )
     {
         element2.style.display = "block";
         element1.style.display = "none";
         element3.style.display = "none";
-        console.log("estou dentro do ELSE IF");
-        console.log(element1.style.display);
-        console.log(element2.style.display);
-        console.log(element3.style.display);
     }else {
         element1.style.display = "none";
         element2.style.display = "none";
         element4.style.display = "none";
         element3.style.display = "block";
-
-        console.log("estou dentro do ELSE");
-        console.log(element1.style.display);
-        console.log(element2.style.display);
-        console.log(element3.style.display);
     }
 }
 /*
