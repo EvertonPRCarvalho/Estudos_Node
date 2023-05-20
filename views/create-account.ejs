@@ -36,9 +36,7 @@
                 <h2>Crie sua conta</h2>
                 <p>Insira as informações abaixo para iniciar seu cadastro como um(a) dos(as) nossos(as) doadores(as) parceiras.</p>
             </div>
-
-            <% if (true) {%>
-                <form action="/createUser" method="post" id="form-login">
+                <form id="form-login-step-one" >
                     <div class="field-container">
                         <label for="nomeCompleto">Nome</label>
                         <input type="text" name="nomeCompleto" id="nomeCompleto">
@@ -51,11 +49,9 @@
                         <label for="telefone">Telefone</label>
                         <input type="text" name="telefone" id="telefone">
                     </div>
-                    <button type="submit" class="submit-account">Seguir</button>
+                    <!-- <button type="submit" class="submit-account" onclick="nextStepCreateAccount()">Seguir</button> -->
                 </form>
-            <% }%>
-            <% if (true) {%>
-                <form action="">
+                <form action="" id="form-login-step-tow" style="display:none;">
                     <div class="field-container">
                         <label for="cep">CEP</label>
                         <input type="text" name="cep" id="cep">
@@ -80,26 +76,24 @@
                         <label for="estado">Estado</label>
                         <input type="password" name="estado" id="estado">
                     </div>
-                    <button type="submit" class="submit-account">Seguir</button>
                 </form>
-            <% }%>
-            <% if (true) {%>
-                <form action="">
+                <button type="submit" class="submit-account" id="btn-next-step" onclick="nextStepCreateAccount()" style="display:block;">Seguir</button>
+                <form action="/createUser" method="post" id="form-login-step-three" style="display:none;">
                     <div class="field-container">
                         <label for="email">Email</label>
-                        <input type="text" name="nomeCompleto" id="nomeCompleto">
+                        <input type="text" name="email" id="email">
                     </div>
                     <div class="field-container">
                         <label for="senha">Senha</label>
-                        <input type="text" name="cpf" id="cpf">
+                        <input type="text" name="senha" id="senha">
                     </div>
                     <div class="field-container">
                         <label for="repetirSenha">Repita sua senha</label>
-                        <input type="text" name="telefone" id="telefone">
+                        <input type="text" name="repetirSenha" id="repetirSenha">
                     </div>
-                    <button type="submit" class="submit-account">Criar</button>
+                    <button type="submit" class="submit-account" >Criar</button>
                 </form>
-            <% }%>
+            
         </section>
     </main>
     <footer>
@@ -129,6 +123,6 @@
         </ul>
     </footer>
 
-    <script src="../public/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
