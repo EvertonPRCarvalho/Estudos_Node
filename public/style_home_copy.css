@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+/*GRID*/
+
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    max-width: 1920px;
+    max-height: 720px;
+}
+.grid {
+    width: 100%;
+    height: 100%;
+	display: grid;
+}
+
+.logo {
+	grid-area: logo;
+}
+#logo {
+    text-align: center;
+    letter-spacing: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+.nav {
+	grid-area: nav;
+}
+
+#menu {
+    display: none;
+    position: absolute;
+    width: 179vh;
+    right: 0;
+    background-color: white;
+    z-index: 10;
+    font-size: 16px;
+    margin-top: -1rem;
+}
+
+#menu a {
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+#menu p {
+    visibility: hidden;
+}
+
+#btn-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 1.87rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFC468;
+}
+
+#btn-login:hover,
+.doador-container:hover {
+    background-color: #c19650;
+}
+
+#nav {
+    margin: 1rem 0 0 1rem;
+}
+
+#nav.active #menu {
+    display: flex;
+    flex-direction: column;
+}
+
+#nav.active ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 1.5rem 0 0 2rem;
+}
+
+#nav.active #btn-login {
+    margin: 1.5rem 0 1.5rem 2rem;
+}
+
+#btn-mobile {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.sidenav {
+	grid-area: sidenav;
+}
+
+.card-categoria {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style: none;
+    gap: 1rem;
+    
+}
+.card-categoria a{
+    text-decoration: none;
+}
+
+.card-categoria img {
+    margin-top: 2rem;
+    height: 10.5rem;
+    width: 10.5rem;
+}
+.card-categoria p {
+    text-align: center;
+    color: black;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+}
+.advert{
+    background-image: url('img/home.jpg');
+    grid-area: advert;
+    height: 18rem;
+
+}
+.advert > p{
+    margin-top: 5rem;
+    background-color: white;
+    width: 50rem;
+    margin-left: 35rem;
+    font-weight: 500;
+}
+
+.content {
+	grid-area: content;
+}
+
+.footer {
+	grid-area: footer;
+}
+
+
+.grid-template-areas-4 {
+	grid-template-columns: 20% 70% 10%;
+	grid-template-rows: 5vh 45vh 90vh 5vh;
+	grid-template-areas:
+		"logo nav nav"
+        "advert advert advert"
+		"sidenav content content"
+		"footer footer footer"
+		;
+}
+
+/* Grid Item */
+.item {
+	margin: 5px;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.content > .list-itens{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1rem;
+
+}
+.obj{
+    height: 364px;
+    width: 240px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+}
+
+.obj img{
+    width: 15rem;
+    height: 13.625rem;
+}
+.obj p{
+    font-size: small;
+    text-align: left;
+}
+.obj h3{
+    font-size: 16px;
+    text-align: left;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    
+}
+.obj h4{
+    font-size: 14px;
+    text-align: left;
+    font-weight: bold;
+}
+.btn-tenho-interesse{
+    align-items: center;
+    width: 9.8rem;
+    height: 2.375rem;
+    margin-top: 0.5rem;
+    
+    border: none;
+    border-radius: 5px;
+    background-color: #FFC468;
+    
+    
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.filtro{
+    border: #9A9A9A;
+    border-style: groove;
+    border-width: 2px;
+    border-radius: 5px;
+    margin-left: 2rem;
+    padding-left: 0.5rem;
+    text-align: left;
+    font-size: 1.2rem;
+}
+.filtro h4{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+h1 {
+	text-align: center;
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+
+
+
+body > div > img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+footer{
+    font-size: 14px;
+}
+.card-links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 4rem;
+}
+
+.card-links img {
+    width: 1.5rem;
+}
+
+/*
+
+@media only screen and (min-width: 720px) and (max-width: 1920px) {
+    #btn-mobile {
+        display: none;
+    }
+    
+    main h1 {
+        margin-top: 2rem;
+    } 
+    
+    #menu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: static;
+    }
+    
+    #menu ul {
+        display: flex;
+        gap: 5.62rem;
+    }
+    
+    #menu p {
+        visibility: visible;
+    }
+    
+    #cards {
+        width: 1404px;
+        display: flex;
+        gap: 5.12rem;
+        margin: 2rem 0 5rem 0;
+        
+        justify-content: space-between;
+    }
+
+    .ong-container {
+        margin-top: 0;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border-top: 8px solid #D9D9D9;
+        margin-top: 0;
+        padding: 0;
+    }
+    
+    .footer-logo {
+        visibility: visible;
+        letter-spacing: 1.92rem;
+    }
+    
+    .card-links {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 4rem;
+        margin-bottom: 2rem;
+    }
+}
+
+*/
+    
+@media only screen and (min-width: 720px) and (max-width: 1920px) {
+    #btn-mobile {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: static;
+    }
+
+    #menu ul {
+        display: flex;
+        gap: 5.62rem;
+        margin-bottom: 0;
+    }
+
+    #menu p {
+        visibility: hidden;
+    }
+
+    #cards {
+        display: flex;
+        gap: 5.12rem;
+    }
+
+    .ong-container {
+        margin-top: 0;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border-top: 8px solid #D9D9D9;
+        margin-top: 6rem;
+        padding-top: 15px;
+    }
+
+    .footer-logo {
+        visibility: visible;
+        letter-spacing: 1.92rem;
+    }
+
+    .card-links {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 4rem;
+    }
+}
