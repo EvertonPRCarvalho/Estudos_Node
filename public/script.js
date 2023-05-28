@@ -31,6 +31,9 @@ const routeSendItem = require('../routes/routes');
 function sendITem(){
     routeSendItem().require('/itens-doados')
 }
+function getItem(){
+    var item = document.createElement()
+}
 /*
 btnMobile.addEventListener('click', toggleMenu);
 

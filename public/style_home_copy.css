@@ -174,6 +174,7 @@ body{
     padding-left: 1rem;
 
 }
+
 .obj{
     height: 364px;
     width: 240px;
@@ -202,19 +203,7 @@ body{
     font-weight: bold;
 }
 .btn-tenho-interesse{
-    align-items: center;
-    width: 9.8rem;
-    height: 2.375rem;
-    margin-top: 0.5rem;
-    
-    border: none;
-    border-radius: 5px;
-    background-color: #FFC468;
-    
-    
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 18px;
+   
 }
 
 .filtro{
@@ -324,7 +313,120 @@ footer{
 }
 
 */
+.button {
+    margin-top: 0.5rem;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    background-color: #FFC468;
     
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  .button:hover {
+    background: #ffffff;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width:  679px;
+    height: 760px;
+    position: relative;
+    transition: all 5s ease-in-out;
+
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-row: 25% 25% 25% 25%; 
+    grid-template-areas: "tituloInfoItem tituloInfoItem"
+                        "imgItem InfoItem"
+                        "tituloInfoDoador tituloInfoDoador"
+                        "imgDoador InfoDoador"
+    ;
+  }
+  #tituloInfoItem{
+    grid-area: tituloInfoItem;
+    background-color: #9A9A9A;
+}
+#tituloInfoItem{
+    grid-area: tituloInfoItem;
+    background-color: #f4f0f4;
+}
+#imgItem{
+    grid-area: imgItem;
+    background-color: #9c1988;
+}
+#InfoItem{
+    grid-area: InfoItem;
+    background-color: #92c508;
+}
+#tituloInfoDoador{
+    grid-area: tituloInfoDoador;
+    background-color: #56905f;
+}
+#imgDoador{
+    grid-area: imgDoador;
+    background-color: #f98b8b;
+}
+#InfoDoador{
+    grid-area: InfoDoador;
+    background-color: #b50f0f;
+}
+  /* .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  } 
+  .popup .close:hover {
+      color: #06D85F;
+    }
+*/
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
 @media only screen and (min-width: 720px) and (max-width: 1920px) {
     #btn-mobile {
         display: none;
@@ -378,3 +480,8 @@ footer{
         gap: 4rem;
     }
 }
+
+
+  
+
+  

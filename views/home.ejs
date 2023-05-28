@@ -39,14 +39,33 @@
         <div class="item content">
                 <div class="list-itens">
                     <% for(var i=0; i<10; i++) {%>
-                    <div class="obj">
+                    <div class="obj box">
                         <img src="img/eletronico.png" alt="">
                         <h3 div="nome-item">Nome do item</h3>
                         <p id="descricao-item">Descrição do item deve ser exibida logo após.</p>
                         <h4 id="cidade">Recife</h4>
-                        <button class="btn-tenho-interesse">Tenho interesse</button>
+                        <a class="button" href="#popup1">Tenho interesse</a>
                     </div>
                     <% } %>
+                    <div id="popup1" class="overlay">
+                        <div class="popup">
+                            <h3 id="tituloInfoItem">Informações sobre o item</h3>
+                            <div id="InfoItem">
+                                <p>Título: </p>
+                                <p>Categoria:</p>
+                                <p>Bairro:</p>
+                                <p>Descrição:</p>
+                            </div>
+                            <img id="imgItem" src="img/monitor_popup.png" alt="">
+                            <h3 id="tituloInfoDoador">Informações sobre o doador</h3>
+                            <div id="InfoDoador">
+                                <p>Título: </p>
+                                <p>Categoria:</p>
+                                <p>Bairro:</p>
+                                <p>Descrição:</p></div>
+                            <img id="imgDoador" src="img/user_circle.png" alt="">
+                        </div>
+                    </div>
                 </div>
         </div>
         <div class="item sidenav">
