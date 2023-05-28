@@ -28,22 +28,37 @@
     visibility: hidden;
 }
 
-#btn-login {
+#btn-desativar-anuncio {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 7rem;
     height: 1.87rem;
     border: none;
     border-radius: 5px;
     background-color: #FFC468;
 }
 
-#btn-login:hover,
+#btn-desativar-anuncio:hover,
 .doador-container:hover {
     background-color: #c19650;
 }
+#btn-excluir-item:hover,
+.doador-container:hover {
+    background-color: #e0e0e0;
+}
 
+#btn-excluir-item{
+    color: red;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.87rem;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    
+}
 #nav {
     margin: 1rem 0 0 1rem;
 }
@@ -79,6 +94,7 @@ main {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    justify-content: center;
 }
 
 main h1 {
@@ -86,20 +102,60 @@ main h1 {
     margin: 2rem 0 4.93rem 4rem;
 }
 
-
+#titulo-itens-doados{
+    display: none;
+    margin-bottom: 30rem;
+}
 .doador-container {
     background-color: #FFC468;
 }
-
-.ong-container {
-    background-color: #75B595;
-    margin-top: 2.7rem;
+textarea{
+    width: 90%;
+    height: 147px;
+    padding: 5px;
 }
+.item{
+    display: grid;
+    grid-template-columns: 20% 55% 25%;
+	grid-template-rows: 10% 10% 10% 70%;
+	grid-template-areas:
+		"img titulo titulo"
+        "img categoria categoria"
+		"img bairro bairro"
+		"img descricao btn"
+		;
 
-.ong-container:hover {
-    background-color: #55806b;
+    background-color: #ffffff;
+    width: 1151px;
+    height: 239px;
 }
-
+#titulo, #categoria, #bairro, #descricao{
+    background-color: rgb(255, 255, 255);
+    padding-left: 1rem;    
+} 
+img{
+    grid-area: img;
+}
+#titulo{
+    grid-row: titulo;
+}
+#categoria{
+    grid-row: categoria;
+}
+#bairro{
+    grid-row: bairro;
+}
+#descricao{
+    grid-row: descricao;
+}
+#btn{
+    grid-row: btn;
+    width: 100%;
+}
+#btn > #btn-desativar-anuncio, #btn-excluir-item{
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
 .doador-container,
 .ong-container {
     display: flex;

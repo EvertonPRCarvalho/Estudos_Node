@@ -26,6 +26,11 @@ function nextStepCreateAccount(){
         element3.style.display = "block";
     }
 }
+
+const routeSendItem = require('../routes/routes');
+function sendITem(){
+    routeSendItem().require('/itens-doados')
+}
 /*
 btnMobile.addEventListener('click', toggleMenu);
 

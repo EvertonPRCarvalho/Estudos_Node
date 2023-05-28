@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_doar_item.css">
+    <link rel="stylesheet" href="style_itens_doados.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>DOE+ | ONGS</title>
 </head>
@@ -17,8 +17,8 @@
             <section id="menu">
                 <p>DOE+</p>
                 <ul>
-                    <li><a href="home.ejs">Início</a></li>
-                    <li><a href="ongs.ejs">ONGs</a></li>
+                    <li><a href="home">Início</a></li>
+                    <li><a href="ongs">ONGs</a></li>
                     <li><a href="#">Nosso propósito</a></li>
                 </ul>
                 <a href="./login" id="btn-login">
@@ -30,15 +30,33 @@
     </header>
 
     <main>
-        <section>
-            <h2>Veja todos os itens que você está doando!</h2>
-        </section>
-        <section id="item-doado">
-            <div class="item-doado">
-                <p>asdasds</p>
+        <section class="content-itens-doados">
+            <!-- <h2 id="titulo-itens-doados">Veja todos os itens que você está doando!</h2>
+            <h2 id="titulo-nao-possui-itens-doados">Você ainda não anunciou nenhum item!</h2> -->
+            <div class="itens">
+                <div class="item">
+                    <img src="img/eletronico.png" alt="">
+                    <p id="titulo">Titulo: <b>Monitor AOC 23'</b></p>
+                    <p id="categoria">Categoria: <b>Eletrônico</b></p>
+                    <p id="bairro">Bairro: <b>Recife</b></p>
+                    <div id="descricao">
+                        <p>Descrição:</p>
+                        <form>
+                            <textarea placeholder= "Full HD (1920x1080)Full HD (1920x1080) Imagem meramente ilustrativa; Todas as informações divulgadas são de responsabilidade do fabricante/fornecedor; As cores podem sofrer variações de acordo com o tipo, configuração e resolução do seu monitor" name="mensagem"></textarea>
+                        </form>
+                    </div>
+                    
+                    <div id="btn">
+                        <button id="btn-desativar-anuncio">
+                            <b>O item foi doado!</b>
+                        </button>
+                        <button id="btn-excluir-item">
+                            <b>Excluir item</b>
+                        </button>
+                    </div>
+                </div>
             </div>
-        </section>
-         
+        </section>         
     </main>
 
         <footer>

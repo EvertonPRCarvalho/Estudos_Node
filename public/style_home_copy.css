@@ -24,6 +24,7 @@ body{
 
 .logo {
 	grid-area: logo;
+    visibility: hidden;
 }
 #logo {
     text-align: center;
@@ -39,12 +40,13 @@ body{
 #menu {
     display: none;
     position: absolute;
-    width: 179vh;
+    width: 100%;
     right: 0;
     background-color: white;
     z-index: 10;
     font-size: 16px;
     margin-top: -1rem;
+    margin-left: 15rem;
 }
 
 #menu a {
@@ -66,6 +68,7 @@ body{
     border: none;
     border-radius: 5px;
     background-color: #FFC468;
+    margin-left: 22rem;
 }
 
 #btn-login:hover,
@@ -107,6 +110,7 @@ body{
 .card-categoria {
     display: flex;
     justify-content: center;
+    margin-top: 13rem;
     flex-direction: row;
     list-style: none;
     gap: 1rem;
@@ -133,15 +137,8 @@ body{
 .advert{
     background-image: url('img/home.jpg');
     grid-area: advert;
-    height: 18rem;
+    height: 20rem;
 
-}
-.advert > p{
-    margin-top: 5rem;
-    background-color: white;
-    width: 50rem;
-    margin-left: 35rem;
-    font-weight: 500;
 }
 
 .content {
@@ -155,7 +152,7 @@ body{
 
 .grid-template-areas-4 {
 	grid-template-columns: 20% 70% 10%;
-	grid-template-rows: 5vh 45vh 90vh 5vh;
+	grid-template-rows: 5vh 55vh 90vh 5vh;
 	grid-template-areas:
 		"logo nav nav"
         "advert advert advert"
