@@ -28,6 +28,12 @@
     visibility: visible;
 }
 
+.logo {
+    letter-spacing: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
 #btn-desativar-anuncio {
     display: flex;
     align-items: center;
@@ -128,13 +134,24 @@ textarea{
     background-color: #ffffff;
     width: 1151px;
     height: 239px;
+    margin-bottom: 4rem;
 }
 #titulo, #categoria, #bairro, #descricao{
     background-color: rgb(255, 255, 255);
     padding-left: 1rem;    
 } 
+
+.desc-card {
+    font-size: 14px;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    font-weight: 700;
+    text-align: justify;
+}
+
 img{
     grid-area: img;
+    border-radius: 6px;
 }
 #titulo{
     grid-row: titulo;
