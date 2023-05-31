@@ -115,52 +115,51 @@ main #ongs-titulo {
   }
 
 #eletronico{
-	background-image: url("/img/NOME_DA_IMAGEM");
+	background-image: url("img/categoria/categoriaEletronicos.png"); 
 	background-color: #355239;
 }
 #vestuario{
-	/* background-image: url("/img/NOME_DA_IMAGEM"); */
+	background-image: url("img/categoria/categoriaVestuario.png");
 	background-color: #30893c;
 }
 #moveis{
-	/* background-image: url("/img/NOME_DA_IMAGEM"); */
+	background-image: url("img/categoria/categoriaMoveis.png");
 	background-color: #0fe42c;
 	
 }
-#cozinha{
-	/* background-image: url("/img/NOME_DA_IMAGEM"); */
+#estudo{
+	background-image: url("img/categoria/categoriaEstudo.png");
 	background-color: #95a816;
 	
 	
 }
 #infantil{
-	/* background-image: url("/img/NOME_DA_IMAGEM"); */
+	background-image: url("img/categoria/categoriaInfantil.png");
 	background-color: #1aa68f;
 	
 }
 
 #acessibilidade{
-	/* background-image: url("/img/NOME_DA_IMAGEM"); */
+	background-image: url("img/categoria/categoriaAcessibilidade.png");
 	background-color: #797f7a;
 	
 }
 #esporte{
-	/* background-image: url("/img/NOME_DA_IMAGEM"); */
+	background-image: url("img/categoria/categoriaEsporte.png");
 	background-color: #4f144d;
 }
-#estudo{
-	/* background-image: url("/img/NOME_DA_IMAGEM"); */
+#cozinha{
+	background-image: url("img/categoria/categoriaCozinha.png");
 	background-color: #310b0b;
 	
 }
-footer {
+/* footer {
     display: flex;
-
     flex-direction: column    align-items: center;
     border-top: 8px solid #D9D9D9;
     margin-top: 3rem;
     padding: 2rem;
-}
+} */
 
 .footer-logo {
     visibility: hidden;
