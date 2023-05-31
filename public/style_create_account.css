@@ -80,6 +80,7 @@ main {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    justify-content: center;
 }
 
 main h1 {
@@ -99,6 +100,10 @@ main h1 {
 .mensagem-login, #form-login {
     /*margin-left: 1rem;*/
     width: 20rem;
+}
+
+#btn-mobile {
+    display: none;
 }
 
 .field-container {
