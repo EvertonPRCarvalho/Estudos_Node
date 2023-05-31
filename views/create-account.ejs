@@ -78,7 +78,7 @@
                     </div>
                 </form>
                 <button type="submit" class="submit-account" id="btn-next-step" onclick="nextStepCreateAccount()" style="display:block;">Seguir</button>
-                <form action="/createUser" method="post" id="form-login-step-three" style="display:none;">
+                <form action="/categoria" id="form-login-step-three" style="display:none;">
                     <div class="field-container">
                         <label for="email">Email</label>
                         <input type="text" name="email" id="email">
@@ -91,8 +91,13 @@
                         <label for="repetirSenha">Repita sua senha</label>
                         <input type="text" name="repetirSenha" id="repetirSenha">
                     </div>
-                    <button type="submit" class="submit-account" >Criar</button>
+                    
+                    <button type="submit" class="submit-account">
+                        Criar
+                    </button>
+
                 </form>
+                
             
         </section>
     </main>
