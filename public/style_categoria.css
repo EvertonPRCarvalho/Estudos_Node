@@ -79,7 +79,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
     margin-top: 4rem;
 }
 
@@ -96,7 +95,7 @@ main #ongs-titulo {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	margin: 10rem 20rem;
+	margin: 9rem 0;
 	width: 60rem;
 	height: 30rem;
 	background-color: orange;

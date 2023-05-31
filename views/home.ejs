@@ -15,9 +15,7 @@
 <body>
         
     <section class="grid grid-template-areas-4">
-        <div class="item logo">
-            <h2 id="logo">DOE+</h2>
-        </div>
+        
         <div class="item nav">
              <nav id="nav">
                 <button id="btn-mobile">
@@ -49,20 +47,24 @@
                     <% } %>
                     <div id="popup1" class="overlay">
                         <div class="popup">
+                            <a class="close" href="#">&times;</a>
                             <h3 id="tituloInfoItem">Informações sobre o item</h3>
                             <div id="InfoItem">
-                                <p>Título: </p>
-                                <p>Categoria:</p>
-                                <p>Bairro:</p>
-                                <p>Descrição:</p>
+                                <p>Título: <b>Monitor AOC 23'</b></p>
+                                <p>Categoria: <b>Eletrônico</b></p>
+                                <div id="descricao">
+                                    <p>Descrição:</p>
+                                    <p class="desc-card">Full HD (1920x1080)Full HD (1920x1080) Imagem meramente ilustrativa; Todas as informações divulgadas são de responsabilidade do fabricante/fornecedor; As cores podem sofrer variações de acordo com o tipo, configuração e resolução do seu monitor.</p>
+                                </div>
                             </div>
                             <img id="imgItem" src="img/monitor_popup.png" alt="">
                             <h3 id="tituloInfoDoador">Informações sobre o doador</h3>
                             <div id="InfoDoador">
-                                <p>Título: </p>
-                                <p>Categoria:</p>
-                                <p>Bairro:</p>
-                                <p>Descrição:</p></div>
+                                <p>Nome: <b>Carla Andrade</b></p>
+                                <p>Telefone: <a href="https://api.whatsapp.com/send/?phone=5581985437940">(81) 98543-7940</a></p>
+                                <p>Email: <a href="mailto:evertonprcarvalho@fac.pe.senac.br">carla.andrade@gmail.com</a></p>
+                                <p>Bairro: <b>Recife</b></p>
+                            </div>
                             <img id="imgDoador" src="img/user_circle.png" alt="">
                         </div>
                     </div>
@@ -128,6 +130,9 @@
             </div>
         </div>
         <div class="item advert">
+            <div class="item logo">
+                <h2 id="logo">DOE+</h2>
+            </div>
             <ul class="card-categoria">
                 <li>
                     <a href="#">

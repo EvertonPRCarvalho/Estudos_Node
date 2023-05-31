@@ -24,14 +24,14 @@ body{
 
 .logo {
 	grid-area: logo;
-    visibility: hidden;
 }
 #logo {
     text-align: center;
-    letter-spacing: 2rem;
-    font-size: 2rem;
+    letter-spacing: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     color: black;
+    margin-top: 3rem;
 }
 .nav {
 	grid-area: nav;
@@ -46,7 +46,8 @@ body{
     z-index: 10;
     font-size: 16px;
     margin-top: -1rem;
-    margin-left: 15rem;
+    justify-content: space-between;
+    
 }
 
 #menu a {
@@ -68,7 +69,7 @@ body{
     border: none;
     border-radius: 5px;
     background-color: #FFC468;
-    margin-left: 22rem;
+    margin-right: 2rem;
 }
 
 #btn-login:hover,
@@ -78,6 +79,7 @@ body{
 
 #nav {
     margin: 1rem 0 0 1rem;
+    width: 100%;
 }
 
 #nav.active #menu {
@@ -105,12 +107,13 @@ body{
 
 .sidenav {
 	grid-area: sidenav;
+    min-width: 278px;
 }
 
 .card-categoria {
     display: flex;
     justify-content: center;
-    margin-top: 13rem;
+    margin-top: 2.5rem;
     flex-direction: row;
     list-style: none;
     gap: 1rem;
@@ -122,23 +125,30 @@ body{
 
 .card-categoria img {
     margin-top: 2rem;
-    height: 10.5rem;
-    width: 10.5rem;
+    height: 75%;
+    width: 100%;
 }
 .card-categoria p {
-    text-align: center;
-    color: black;
-    font-family: 'Rubik';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
+
+    margin-top: 0.5rem;
+
+    color: black;
+    text-align: center;
     font-weight: 600;
     font-size: 18px;
     line-height: 18px;
 }
 .advert{
-    background-image: url('img/home.jpg');
+    background-color: rgb(219, 219, 219);
     grid-area: advert;
     height: 20rem;
+    min-height: 24.5rem;
 
+}
+.advert > ul{
+    padding-left: 0;
 }
 
 .content {
@@ -151,19 +161,19 @@ body{
 
 
 .grid-template-areas-4 {
-	grid-template-columns: 20% 70% 10%;
-	grid-template-rows: 5vh 55vh 90vh 5vh;
+	grid-template-columns: min-content 80% ;
+	grid-template-rows: 3rem min-content 60.75rem 3rem;
 	grid-template-areas:
-		"logo nav nav"
-        "advert advert advert"
-		"sidenav content content"
-		"footer footer footer"
+		"logo nav"
+        "advert advert"
+		"sidenav content"
+		"footer footer"
 		;
 }
 
 /* Grid Item */
 .item {
-	margin: 5px;
+	margin: 5px 0px;
 	text-align: center;
 	font-size: 1.5em;
 }
@@ -215,6 +225,7 @@ body{
     padding-left: 0.5rem;
     text-align: left;
     font-size: 1.2rem;
+    min-width: 278px;
 }
 .filtro h4{
     margin-top: 2rem;
@@ -320,6 +331,8 @@ footer{
     border-radius: 5px;
     background-color: #FFC468;
     
+    padding: 0.4rem;
+
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
@@ -327,93 +340,113 @@ footer{
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease-out;
-  }
-  .button:hover {
-    background: #ffffff;
-  }
-  
-  .overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
-  }
-  .overlay:target {
-    visibility: visible;
-    opacity: 1;
-  }
-  
-  .popup {
-    margin: 70px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    width:  679px;
-    height: 760px;
-    position: relative;
-    transition: all 5s ease-in-out;
+    
+}
 
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-row: 25% 25% 25% 25%; 
-    grid-template-areas: "tituloInfoItem tituloInfoItem"
-                        "imgItem InfoItem"
-                        "tituloInfoDoador tituloInfoDoador"
-                        "imgDoador InfoDoador"
-    ;
-  }
-  #tituloInfoItem{
-    grid-area: tituloInfoItem;
-    background-color: #9A9A9A;
+.button:hover {
+    color: #202020;
+}
+.overlay {
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: rgba(0, 0, 0, 0.7);
+transition: opacity 500ms;
+visibility: hidden;
+opacity: 0;
+}
+.overlay:target {
+visibility: visible;
+opacity: 1;
+}
+
+.popup {
+margin: 70px auto;
+padding: 20px;
+background: #fff;
+border-radius: 5px;
+width:  690px;
+height: 700px;
+position: relative;
+transition: all 5s ease-in-out;
+text-align: start;
+
+display: grid;
+grid-template-columns: 11.4rem 27rem;
+grid-row: 13rem 20rem 13rem 20rem; 
+grid-template-areas: "tituloInfoItem tituloInfoItem"
+                    "imgItem InfoItem"
+                    "tituloInfoDoador tituloInfoDoador"
+                    "imgDoador InfoDoador"
+;
+column-gap: 2rem;
+}
+.popup p{
+    font-size: 18px;
+    margin: 0;
+    max-width: max-content;
+}
+.popup a{
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0;
+}
+.desc-card {
+    font-size: 14px;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    font-weight: 700;
+    text-align: justify;
+}
+.tituloItemPopUp{
+    /* margin-top: 5rem; */
+}  
+.textPopUp{
+    margin-left: 1rem;
 }
 #tituloInfoItem{
     grid-area: tituloInfoItem;
-    background-color: #f4f0f4;
+
+}
+#tituloInfoItem{
+    grid-area: tituloInfoItem;
 }
 #imgItem{
     grid-area: imgItem;
-    background-color: #9c1988;
 }
 #InfoItem{
     grid-area: InfoItem;
-    background-color: #92c508;
+    font-size: 18px;
 }
 #tituloInfoDoador{
     grid-area: tituloInfoDoador;
-    background-color: #56905f;
 }
 #imgDoador{
     grid-area: imgDoador;
-    background-color: #f98b8b;
 }
 #InfoDoador{
     grid-area: InfoDoador;
-    background-color: #b50f0f;
 }
-  /* .popup h2 {
+   .popup h2 {
     margin-top: 0;
     color: #333;
     font-family: Tahoma, Arial, sans-serif;
   }
   .popup .close {
     position: absolute;
-    top: 20px;
-    right: 30px;
+    right: 25px;
     transition: all 200ms;
-    font-size: 30px;
+    font-size: 45px;
     font-weight: bold;
     text-decoration: none;
     color: #333;
   } 
   .popup .close:hover {
-      color: #06D85F;
+      color: #FFC468;
     }
-*/
+
   .popup .content {
     max-height: 30%;
     overflow: auto;
@@ -434,7 +467,7 @@ footer{
 
     #menu {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         position: static;
     }
@@ -448,6 +481,7 @@ footer{
     #menu p {
         visibility: hidden;
     }
+    
 
     #cards {
         display: flex;
