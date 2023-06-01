@@ -19,11 +19,15 @@
     z-index: 10;
 }
 
+#btn-login {
+    visibility: hidden;
+}
+
 #menu a {
     color: black;
     font-weight: 500;
 }
-#menu p {
+#menu p{
     letter-spacing: 2rem;
     /*margin: 2rem 0 4.93rem 4rem;*/
     font-size: 1.32rem;

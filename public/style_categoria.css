@@ -41,6 +41,10 @@
     background-color: #FFC468;
 }
 
+#btn-login {
+    visibility: hidden;
+}
+
 #btn-login:hover, .doador-container:hover {
     background-color: #c19650;
 }
