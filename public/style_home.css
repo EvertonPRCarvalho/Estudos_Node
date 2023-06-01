@@ -15,7 +15,7 @@
     justify-content: space-around;
     align-items: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-bottom: 2rem;
+    padding: 5px;
 }
 
 #menu ul{
@@ -57,32 +57,62 @@
 
 /* MAIN */
 
-h1 {
-    letter-spacing: 3.55rem;
+.card-filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #355239;
+    padding: 2rem;
+}
+
+.card-filter > div {
+    display: flex;
+    gap: 4rem;
+}
+
+.card-filter > .text-home {
+    color: white;
+}
+
+div > .item-filter {
+    background-color: white;
+    padding: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+div > .text-home {
     text-align: center;
+    letter-spacing: 0.05rem;
+    color: white;
+    margin-top: 0.5rem;
+}
+
+.btn-filter {
+    margin-top: 2rem;
+}
+
+.card-filter h1 {
+    letter-spacing: 3.55rem;
+    color: white;
+    margin-left: 5rem;
 }
 
 section {
     display: flex;
-    margin-top: 2rem;
 }
 
 .list-itens {
     display: flex;
     flex-wrap: wrap;  
     gap: 2rem;
+    justify-content: center;
 }
 
-/*SIDEBAR*/
-
-.filtro {
-    margin-left: 1.4rem;
-    margin-right: 1.4rem;
-    border: 1px solid #9A9A9A;
-    border-radius: 5px;
-    padding: 20px;
+.items-container {
+    margin-top: 2rem;
 }
-
 
 /*CARDS*/
 
@@ -117,6 +147,7 @@ section {
     justify-content: center;
     text-decoration: none;
     color: black;
+    margin-top: 1rem;
 }
 
 .button-container button {
@@ -128,6 +159,13 @@ section {
     border: none;
 }
 
+.btn-espec {
+    margin-top: 4rem;
+}
+
+.btn-espec-cadeira {
+    margin-top: 2.4rem;
+}
 /*POPUP*/
 
 .overlay {
