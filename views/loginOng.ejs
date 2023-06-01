@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_index.css">
+    <link rel="stylesheet" href="style_login.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>DOE+</title>
+    <title>DOE+ | Login</title>
 </head>
 <body>
     <header>
@@ -17,12 +17,13 @@
             <div id="menu">
                 <p>DOE+</p>
                 <ul>
-                    <li><a href="home.ejs">Início</a></li>
-                    <li><a href="ongs.ejs">ONGs</a></li>
+                    <li><a href="home">Início</a></li>
+                    <li><a href="ongs">ONGs</a></li>
+                    <li><a href="#">Parceiros</a></li>
                     <li><a href="#">Nosso propósito</a></li>
                 </ul>
-                <a href="./login" id="btn-login">
-                    Entrar
+                <a href="create-account" id="btn-login">
+                    Cadastre-se
                 </a>
             </div>
         </nav>
@@ -30,25 +31,27 @@
 
     <main>
         <h1>DOE+</h1>
-        <section id="cards">
-            <a href="./login">
-                <div class="doador-container"  >
-                    <div class="circulo-doador"></div>
-                    <img src="img\DoadorMaos.png" alt="">
-                    <p> Sou DOADOR +</p>
-                </div>
-            </a>
+        <section id="login-container">
+            <div class="mensagem-login">
+                <h2>Entrar</h2>
+                <p>Somos motivados por cada ação transformadora que você faz aqui!</p>
+            </div>
 
-            <a href="./loginOng">
-                <div class="ong-container">
-                    <div class="circulo-ong"></div>
-                    <img src="img\ongCasa.png" alt="">
-                    <p> Sou ONG +</p>
+            <form action="/createUser" method="post" id="form-login">
+                <div id="email-container">
+                    <label for="email">E-mail</label>
+                    <input type="text" name="email" id="email">
                 </div>
-            </a>
+
+                <div id="senha-container">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha">
+                </div>
+
+                <button type="submit" id="submit-login">Entrar</button>
+            </form>
         </section>
     </main>
-
     <footer>
         <p>© Copyright 2023 | DOE+</p>
         <p class="footer-logo">DOE+</p>
@@ -76,6 +79,6 @@
         </ul>
     </footer>
 
-    <script src="/public/script.js"></script>
+    <script src="../public/script.js"></script>
 </body>
 </html>

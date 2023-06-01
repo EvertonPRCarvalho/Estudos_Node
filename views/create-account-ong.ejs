@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_create_account.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>DOE+ | Login</title>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <button id="btn-mobile">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            <div id="menu">
+                <p>DOE+</p>
+                <ul>
+                    <li><a href="index">Início</a></li>
+                    <li><a href="ongs">ONGs</a></li>
+                    <li><a href="#">Parceiros</a></li>
+                    <li><a href="#">Nosso propósito</a></li>
+                </ul>
+                <a href="./index.ejs" id="btn-login">
+                    Cadastre-se
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="login-container">
+            <div class="mensagem-login">
+                <h2>Crie sua conta</h2>
+                <p>Insira as informações abaixo para iniciar seu cadastro como um(a) dos(as) nossos(as) doadores(as) parceiras.</p>
+            </div>
+                <form id="form-login-step-one" >
+                    <div class="field-container">
+                        <label for="nomeCompleto">Nome</label>
+                        <input type="text" name="nomeCompleto" id="nomeCompleto">
+                    </div>
+                    <div class="field-container">
+                        <label for="cpf">CNPJ</label>
+                        <input type="text" name="cpf" id="cpf">
+                    </div>
+                    <div class="field-container">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" name="telefone" id="telefone">
+                    </div>
+                    <!-- <button type="submit" class="submit-account" onclick="nextStepCreateAccount()">Seguir</button> -->
+                </form>
+                <form action="" id="form-login-step-tow" style="display:none;">
+                    <div class="field-container">
+                        <label for="cep">CEP</label>
+                        <input type="text" name="cep" id="cep">
+                    </div>
+                    <div class="field-container">
+                        <label for="rua">Rua</label>
+                        <input type="text" name="rua" id="rua">
+                    </div>
+                    <div class="field-container">
+                        <label for="numero-residencia">Nº</label>
+                        <input type="text" name="numero-residencia" id="numero-residencia">
+                    </div>
+                    <div class="field-container">
+                        <label for="bairro">Bairo</label>
+                        <input type="password" name="bairro" id="bairro">
+                    </div>
+                    <div class="field-container">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" name="cidade" id="cidade">
+                    </div>
+                    <div class="field-container">
+                        <label for="estado">Estado</label>
+                        <input type="password" name="estado" id="estado">
+                    </div>
+                </form>
+                <button type="submit" class="submit-account" id="btn-next-step" onclick="nextStepCreateAccount()" style="display:block;">Seguir</button>
+                <form action="/home" id="form-login-step-three" style="display:none;">
+                    <div class="field-container">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div class="field-container">
+                        <label for="senha">Senha</label>
+                        <input type="text" name="senha" id="senha">
+                    </div>
+                    <div class="field-container">
+                        <label for="repetirSenha">Repita sua senha</label>
+                        <input type="text" name="repetirSenha" id="repetirSenha">
+                    </div>
+                    
+                    <button type="submit" class="submit-account">
+                        Criar
+                    </button>
+
+                </form>
+                
+            
+        </section>
+    </main>
+    <footer>
+        <p>© Copyright 2023 | DOE+</p>
+        <p class="footer-logo">DOE+</p>
+        <ul class="card-links">
+            <li>
+                <a href="#">
+                    <img src="img/instagram.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/twitter.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/facebook.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/whatsapp.svg" alt="">
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
