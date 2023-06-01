@@ -9,64 +9,38 @@
     margin: 0;
 }
 
-#menu {
-    display: none;
-    position: absolute;
-    width: 100%;
-    top: 40px;
-    right: 0;
-    background-color: white;
-    z-index: 10;
+#menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 15px;
 }
 
+#menu ul{
+    display: flex;
+    gap: 5.62rem;
+}
+
+
+.name {
+    margin-left: 0.25rem;
+}
 
 #menu a {
     color: black;
     font-weight: 500;
+    text-decoration: none;
 }
+
 #menu p {
     visibility: hidden;
 }
-#btn-login, #submit-login {
+
+#btn-login {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 7rem;
-    height: 1.87rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #FFC468;
-    cursor: pointer;
-}
-
-#btn-login:hover, .doador-container:hover, #submit-login:hover {
-    background-color: #c19650;
-}
-
-#nav {
-    margin: 1rem 0 0 1rem;
-}
-
-#nav.active #menu{
-    display: flex;
-    flex-direction: column;
-}
-
-#nav.active ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    margin: 1.5rem 0 0 2rem;
-}
-
-#nav.active #btn-login {
-    margin: 1.5rem 0 1.5rem 2rem;
-}
-
-#btn-mobile {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
 }
 
 body {
@@ -117,8 +91,23 @@ input[type='text'], input[type='password'] {
 }
 
 #submit-login {
-    font-weight: 700;
     height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn-login, #submit-login {
+    border: none;
+    border-radius: 5px;
+    background-color: #FFC468;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#btn-login {
+    height: 1.89rem;
+    padding: 10px;
 }
 
 #btn-mobile {
