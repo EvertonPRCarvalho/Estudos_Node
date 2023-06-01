@@ -30,6 +30,13 @@
     font-weight: bold;
 
 }
+
+.title-categoria {
+    color: black;
+    font-size: 2.5rem;
+    letter-spacing: 0.05rem;
+}
+
 #btn-login {
     display: flex;
     align-items: center;
@@ -99,7 +106,7 @@ main #ongs-titulo {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	margin: 9rem 0;
+	margin: 7rem 0;
 	width: 60rem;
 	height: 30rem;
 	background-color: orange;
