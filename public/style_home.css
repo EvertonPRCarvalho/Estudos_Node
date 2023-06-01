@@ -3,196 +3,240 @@
 * {
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
-    text-decoration: none;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-#menu {
-    display: none;
-    position: absolute;
-    width: 100%;
-    top: 40px;
-    right: 0;
-    background-color: white;
-    z-index: 10;
+/*HEADER*/
+
+#menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 2rem;
+}
+
+#menu ul{
+    display: flex;
+    gap: 5.62rem;
+    margin-top: 0.5rem;
+}
+
+#btn-login{
+    margin-bottom: 0.5rem;
+}
+
+.profile {
+    display: flex;
+    color: black;
+    margin-right: 2rem;
+}
+
+.name {
+    margin-left: 0.25rem;
 }
 
 #menu a {
     color: black;
     font-weight: 500;
+    text-decoration: none;
 }
 
-#logo {
-    text-align: center;
-    margin: 4rem 0 2rem 0;
-    letter-spacing: 2rem;
-    font-size: 2rem;
-    font-weight: bold;
-    color: black;
-}
-#subtitulo{
-    text-align: center;
-    height: 1.9rem;
-    width: 55rem;
-    border-radius: 5px;
-    background-color: aliceblue;
-    color: black;
+#menu p {
+    visibility: hidden;
 }
 
 #btn-login {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 7rem;
-    height: 1.87rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #FFC468;
 }
 
-#btn-login:hover, .doador-container:hover {
-    background-color: #c19650;
-}
 
-#nav {
-    margin: 1rem 0 0 1rem;
-}
+/* MAIN */
 
-#nav.active #menu{
-    display: flex;
-    flex-direction: column;
-}
-
-#nav.active ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    margin: 1.5rem 0 0 2rem;
-}
-
-#nav.active #btn-login {
-    margin: 1.5rem 0 1.5rem 2rem;
-}
-
-#btn-mobile {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-body {
-    min-height: 100vh;
-}
-
-main {
-
-    text-align: center;
-    color: white;
-}
-
-#ongs-titulo h1 {
-    text-align: center;
+h1 {
     letter-spacing: 3.55rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-#ongs-titulo p{
-    width: 72.4375rem;
-    text-align: justify;
-    margin: auto;
-}
-main #ongs-titulo {
-    background-color: #355239;
-    color: white;
-    height: 239px;
-    width: 1404px;
+    text-align: center;
 }
 
-.ong-parceira #img-ong{
-    width: 314px;
-    height: 258px;
-    margin-top: 1.5rem;
-}
-.ong-parceira-conteudo{
-    margin: 0 2rem;
-}
-.ong-parceira h2{
-    text-align: left;
-    margin: 1rem 0;
-}
-.ong-parceira-conteudo p{
-    text-align: justify;
-}
-.ong-parceira-card-links {
+section {
     display: flex;
-    flex-direction: row;
-    list-style: none;
+    margin-top: 2rem;
 }
 
-.ong-parceira-card-links img {
-    margin: 2rem 0 0 3.5rem;
-    width: 1.5rem;
-    margin-right: 0;
+.list-itens {
+    display: flex;
+    flex-wrap: wrap;  
+    gap: 2rem;
 }
-.doador-container {
-    background-color: #FFC468;
+
+/*SIDEBAR*/
+
+.filtro {
+    margin-left: 1.4rem;
+    margin-right: 1.4rem;
+    border: 1px solid #9A9A9A;
+    border-radius: 5px;
+    padding: 20px;
 }
-.ong-container {
-    background-color: #75B595;
-    margin-top: 2.7rem;
+
+
+/*CARDS*/
+
+.card-item {
+    width: 18rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.card-body{
-    color: black;
+
+.card-item img {
+    width: 100%;
 }
-.card-body h5{
-    font-weight: bold;
-    text-align: left;
+
+.card-text {
+    padding: 10px;
 }
-.card-body p{
-    text-align: left;
+
+.card-text h3, h4 {
+    font-size: 1.6rem;
 }
-.card-body a{
-    font-weight: bold;
-    text-align: left;
+
+.card-text .cidade {
+    display: flex;
+}
+
+.cidade p {
+    font-weight: 700;
+    margin-top: 0.10rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     color: black;
 }
-.card-body i{
-    color: #FF944E;
-    margin-right: 0.3rem;
-}
-main #teste{
-    height: 24.375rem;
-    width: 120rem;
-    background-color: #c2c9c6;
-    margin-top: -2.7rem;
-}
 
-#filtro{
-    box-sizing: border-box;
-
-    width: 355px;
-    height: 635px;
-    margin-left: 3rem;
-    margin-top: 8.75rem;
-    padding-left: 2rem;
-    
-    text-align: left;
-
-    border: 1px solid #9A9A9A;
+.button-container button {
+    background: #FFC468;
     border-radius: 5px;
-    color: black;
+    width: 10rem;
+    font-weight: 700;
+    padding: 1px;
+    border: none;
 }
 
-#filtro input{
-   margin-top: 1rem; 
-}
-#filtro label{
-   margin-top: 1rem; 
-}
+/*POPUP*/
 
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    }
+    .overlay:target {
+    visibility: visible;
+    opacity: 1;
+    }
+    
+    .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width:  690px;
+    height: 700px;
+    position: relative;
+    transition: all 5s ease-in-out;
+    text-align: start;
+    
+    display: grid;
+    grid-template-columns: 11.4rem 27rem;
+    grid-row: 13rem 20rem 13rem 20rem; 
+    grid-template-areas: "tituloInfoItem tituloInfoItem"
+                        "imgItem InfoItem"
+                        "tituloInfoDoador tituloInfoDoador"
+                        "imgDoador InfoDoador"
+    ;
+    column-gap: 2rem;
+    }
+    .popup p{
+        font-size: 18px;
+        margin: 0;
+        max-width: max-content;
+    }
+    .popup a{
+        text-decoration: none;
+        font-size: 18px;
+        margin: 0;
+    }
+    .desc-card {
+        font-size: 14px;
+        margin-top: 0.5rem;
+        margin-right: 1rem;
+        font-weight: 700;
+        text-align: justify;
+    }
+    .tituloItemPopUp{
+        /* margin-top: 5rem; */
+    }  
+    .textPopUp{
+        margin-left: 1rem;
+    }
+    #tituloInfoItem{
+        grid-area: tituloInfoItem;
+    
+    }
+    #tituloInfoItem{
+        grid-area: tituloInfoItem;
+    }
+    #imgItem{
+        grid-area: imgItem;
+    }
+    #InfoItem{
+        grid-area: InfoItem;
+        font-size: 18px;
+    }
+    #tituloInfoDoador{
+        grid-area: tituloInfoDoador;
+    }
+    #imgDoador{
+        grid-area: imgDoador;
+    }
+    #InfoDoador{
+        grid-area: InfoDoador;
+    }
+       .popup h2 {
+        margin-top: 0;
+        color: #333;
+        font-family: Tahoma, Arial, sans-serif;
+      }
+      .popup .close {
+        position: absolute;
+        right: 25px;
+        transition: all 200ms;
+        font-size: 45px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+      } 
+      .popup .close:hover {
+          color: #FFC468;
+        }
+    
+      .popup .content {
+        max-height: 30%;
+        overflow: auto;
+      }    
+
+/*FOOTER*/
 footer {
     display: flex;
     flex-direction: column;
@@ -206,28 +250,6 @@ footer {
     visibility: hidden;
 }
 
-.card-categoria {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 1rem;
-    
-}
-
-.card-categoria img {
-    margin-top: 2rem;
-    height: 10.5rem;
-    width: 10.5rem;
-}
-.card-categoria p {
-    text-align: center;
-    color: black;
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 18px;
-}
 .card-links {
     display: flex;
     flex-direction: row;
@@ -238,138 +260,4 @@ footer {
 .card-links img {
     margin-top: 2rem;
     width: 1.5rem;
-}
-
-
-
-/*GRID*/
-.grid {
-	display: grid;
-}
-
-.logo {
-	grid-area: logo;
-}
-
-.nav {
-	grid-area: nav;
-}
-
-.content {
-	grid-area: content;
-}
-
-.sidenav {
-	grid-area: sidenav;
-}
-
-.advert {
-	grid-area: advert;
-}
-
-.footer {
-	grid-area: footer;
-}
-
-
-.grid-template-areas-4 {
-	grid-template-columns: 30% 60% 10%;
-	grid-template-rows: 10% 85% 5%;
-	grid-template-areas:
-		"logo nav nav"
-		"sidenav content advert"
-		"sidenav footer footer"
-		;
-}
-
-/* Grid Item */
-.item {
-	margin: 5px;
-	background: tomato;
-	text-align: center;
-	font-size: 1.5em;
-}
-
-.grid {
-	max-width: 400px;
-	margin: 0 auto;
-	border: 1px solid #ccc;
-}
-
-h1 {
-	text-align: center;
-	font-size: 1.25em;
-	font-weight: normal;
-}
-
-
-
-
-body > div > img {
-	display: block;
-	margin: 0 auto;
-	max-width: 100%;
-}
-/**/
-
-@media only screen and (min-width: 720px) and (max-width: 1920px) {
-    #btn-mobile {
-        display: none;
-    }
-
-    main h1 {
-        margin-top: 2rem;
-    } 
-
-    #menu{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: static;
-    }
-
-    #menu ul {
-        display: flex;
-        gap: 5.62rem;
-    }
-    
-    #menu p {
-        visibility: visible;
-    }
-
-    #cards {
-        width: 1404px;
-        display: flex;
-        gap: 5.12rem;
-        margin: 2rem 0 5rem 0;
-
-        justify-content: space-between;
-    }
-
-    .ong-container {
-        margin-top: 0;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        border-top: 8px solid #D9D9D9;
-        margin-top: 0;
-        padding: 0;
-    }
-
-    .footer-logo {
-        visibility: visible;
-        letter-spacing: 1.92rem;
-    }
-
-    .card-links {
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        gap: 4rem;
-        margin-bottom: 2rem;
-    }
 }
